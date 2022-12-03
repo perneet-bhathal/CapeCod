@@ -1,0 +1,60 @@
+.TutorialPage {
+  background-image: url('/images/ocean.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.tutorial-card {
+  background-color: #E9F7F6;
+  box-shadow: -1px 15px 30px -12px #73969D;
+  border-radius: 10px; 
+  margin: 2.5%;
+  width: 90%;
+  padding: 2.5%;
+  font-size: 1vw;
+}
+
+.button {
+  padding: 10px;
+  font-size: .8vw;
+  margin: 15px;
+  width: fit-content;
+  border: none;
+  color: #E9F7F6;
+  background-color: #DD6950;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 0  #CDB29F;
+  transition: ease-out 0.3s;
+}
+
+.button:hover {
+  box-shadow: inset 130px 0 0 0  #CDB29F;
+  cursor: pointer;
+}
+
+.click {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+  
+}
+.click img {
+  border-radius: 10px;
+  margin-right: 5%;
+}
+
+.rod {
+  display: flex;
+  align-items: center;
+}
+
+.rod img {
+  border-radius: 10px;
+  margin-right: 5%;
+}
+
+p {
+  width: 40%;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cape Cod</title>
+    <link href="loader.css" rel="stylesheet" type="text/css" />
+    <link href="game.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/images/fishing.png">
+    <script src="script.js"></script>
+    <script src="game.js"></script>
+  </head>
+
+  <body>
+
+    <!---------- Loading Screen -------- --> 
+    <div class="LoadingScreen">
+      <div class="image"> 
+        <img src="/images/fish.png" width="100">
+      </div>
+      <div class="loading">
+        <div class="loading-box">
+            <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!---------- Game Page-------- --> 
+    <div class="GamePage">
+      <audio src="/otamatone.mp3" autoplay loop></audio>
+
+      <div class="menu">
+        <a href="index.html"> 
+          <button class="button">⇦ Home</button>
+        </a>
+
+        <div class="card">
+          <img src="/images/shop.png" width="10%">
+          <h1>Rod Shop</h1>
+        </div>
+
+        <div class="rods">
+          <div class="rod-card">
+            <p>Steel Rod (15/Click)</p>
+            <img src="/images/steel.png" width="100%">
+            <button class="steel" onclick="boughtsteelrod()">50 <img src="/images/fish.png" width="25%"></button>
+          </div>
+          <div class="rod-card">
+            <p>Gold Rod (150/Click)</p>
+            <img src="/images/gold.png" width="100%">
+            <button class="gold" onclick="boughtgoldrod()">1,500 <img src="/images/fish.png" width="25%"></button>
+          </div>
+          <div class="rod-card"> 
+            <p>Diamond Rod (1000/Click)</p>
+            <img src="/images/diamond.png" width="100%">
+            <button class="diamond" onclick="boughtdiamondrod()">15,000 <img src="/images/fish.png" width="25%"></button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="game">
+        
+        <p id="entirefishdisplay">
+          <span id="fishdisplay">0</span>
+          <img src="/images/fish.png" width="20%">
+        </p>
+
+        <div class="flex">
+          <p id="entireroddisplay">
+            Current Rod:
+            <br>
+            <img id="roddisplay" src="/images/wood.png" width="100%">
+          </p>
+
+          <button class="fishButton" onclick="increaseFish()">
+            <img class="myButton" src='/images/fish.png'/ width="30%">
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,183 @@
+
+/*---------- Game Page ----------*/
+
+.GamePage {
+  display: flex;
+}
+/*----- Menu */
+.menu {
+  background-image: url('/images/menu.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height:100vh;
+  border-right: 10px solid #DC694E;
+}
+
+.button {
+  padding: 10px;
+  font-size: .8vw;
+  margin: 15px;
+  width: fit-content;
+  border: none;
+  color: #E9F7F6;
+  background-color: #DD6950;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 0  #CDB29F;
+  transition: ease-out 0.3s;
+}
+
+.button:hover {
+  box-shadow: inset 130px 0 0 0  #CDB29F;
+  cursor: pointer;
+}
+
+.card {
+  background-color: #E9F7F6;
+  box-shadow: -1px 15px 30px -12px #EB9C8B;
+  border-radius: 10px; 
+  margin: 50px;
+  width: 80%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.card h1 {
+  font-family: Fredoka One;
+  color: #DC694E;
+  font-size: 2vw;
+  padding-left: 20px;
+}
+
+.rods {
+  display: flex;
+  margin: 50px;
+  width: 80%;
+}
+
+.rod-card {
+  background-color: #E9F7F6;
+  box-shadow: -1px 15px 30px -12px #EB9C8B;
+  border-radius: 10px; 
+  margin: 3% 3% 5% 3%;
+  width: 30%;
+  padding: 15px;
+  border: none;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.rod-card p {
+  margin-bottom: 10px;
+}
+
+.rods button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.2vw;
+  color: #7E5C47;
+}
+
+.rods button img {
+  padding-left: 2%;
+}
+
+.steel {
+  background-color: #A8C0D5;;
+}
+.steel:hover {
+  background-color: #8FA7BC;
+  cursor: pointer;
+}
+
+.gold {
+  background-color: #FFB200;
+}
+.gold:hover {
+  background-color: #E69900;
+  cursor: pointer;
+}
+
+.diamond {
+  background-color: #5FD3FC;
+}
+.diamond:hover {
+  background-color: #46BAE3;
+  cursor: pointer;
+}
+
+/*----- Game */
+.game {
+  background-image: url('/images/ocean.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.fishButton {
+  border: none;
+  border-radius: 10px;
+  padding: 5%;
+  background-color: #ECF8F7;
+  margin: 10%;
+}
+
+.fishButton:hover {
+  cursor: pointer;
+  background-color: #D8F1EF;
+}
+
+.fishButton:active {
+  background-color: #D8F1EF;
+  transform: translateY(1.5px);
+}
+
+
+#entirefishdisplay{
+  font-family: Fredoka One;
+  font-size: 1.25vw;
+  color: #ff6200;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E9F7F6;
+  box-shadow: -1px 15px 30px -12px #73969D;
+  margin: 10% 60% 0 10%;
+}
+
+.flex {
+  display: flex;
+}
+
+#entireroddisplay{
+  font-family: Fredoka One;
+  font-size:1.25vw;
+  color: #ff6200;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #E9F7F6;
+  box-shadow: -1px 15px 30px -12px #73969D;
+  margin: 5% 0 0 10%;
+  width: 75%;
+}
+
+
+#fishdisplay{
+  font-family: Fredoka One;
+  font-size:3vw;
+  color: #ff6200;
+  padding-right: 10%;
+}
